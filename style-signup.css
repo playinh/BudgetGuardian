@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+ }
+
+body
+    {
+    font-family: 'Raleway', sans-serif;
+    background: black;
+    }
+
+.flex
+    {
+    background: url("background-signup.jpg") no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 100vh;
+    }
+
+.text
+    {
+	flex: 1;
+    margin-top: 3vh;
+	margin-left: 5%;
+    }
+
+.input
+    {
+    margin-top: 22vh;
+    flex: 1;
+	margin-left: 28%;
+    }
+
+.text h1
+    {
+    font-size: 140px;
+    color: #fff;
+    }
+
+.text p
+    {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 300;
+    }
+
+.text p a
+    {
+    color: #B2FFFF;
+    font-weight: 700;
+    }
+
+.form
+    {
+	display: flex;
+    background: transparent;
+    flex-direction: column;
+    width: 250px;
+    }
+
+
+label
+    {
+    position: relative;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    border: 2px transparent;
+    border-radius: 5px;
+    padding: 5px 50px;
+    display: flex;
+    align-items: center;
+    }
+
+label:before
+	{
+    content:"";
+    height: 20px;
+    width: 20px;
+    border: 3px solid #6CB4EE;
+    border-radius: 50%;
+    margin-right: 10px;
+    }
+
+input  
+    {
+    margin: 20px 0;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    }
+
+.user_name, .password
+    {
+    border-bottom: 2px solid black;
+    }
+
+.button
+    {
+    background: #6CB4EE;
+    color: white;
+    font-size: 18px;
+    }
+
+.button:hover
+    {
+    background: #fff;
+    color: black;
+    }

@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+ }
+
+body
+    {
+    font-family: 'Raleway', sans-serif;
+    background: #000;
+    }
+
+.flex
+    {
+	display: flex;
+    background: url("background-login.jpg") no-repeat;
+    background-size: cover;
+    height: 100vh;
+    }
+
+.image
+	{
+	flex: 1;
+	margin-top: 10vh;
+	margin-left: 15vh;
+	}
+
+.text
+    {
+	flex: 1;
+	margin-left: 10vh;
+	margin-top: 5vh;
+    }
+
+.input 
+    {
+	flex: 1;
+	margin-left: 15vh;
+	margin-top: 40vh;
+    }
+
+.text h1
+    {
+    font-size: 140px;
+    color: #6CB4EE;
+    font-weight: 500;
+    }
+
+.text p
+    {
+    font-size: 20px;
+    color: black;
+    font-weight: 400;
+    }
+
+.text p a  
+    {
+    color: #6CB4EE;
+    font-weight: 700;
+    }
+
+.form   
+    {
+    background: transparent;
+    color: black;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    }   
+
+input  
+    {
+    margin: 20px 0;
+    padding: 20px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    }
+
+.user_name, .password
+    {
+    border-bottom: 1px solid black;
+    }
+
+.button
+    {
+    background: #6CB4EE;
+    color: #fff;
+    font-size: 18px;
+    }
+
+.button:hover
+    {
+    background: #fff;
+    color: #000;
+    }

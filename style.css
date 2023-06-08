@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+:root {
+  --expense: red;
+  --income: #6CB4EE;
+}
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("background-site.png");
+    background-repeat: no-repeat;
+    background-size: cover;  
+  
+  font-family: 'Lato';
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  
+    
+}
+
+.container {
+  margin: 30px auto;
+  width: 350px;
+}
+
+h1 {
+  letter-spacing: 1px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  color: #14211f;
+}
+
+h3 {
+  border-bottom: 1px solid #6CB4EE;
+  padding-bottom: 10px;
+  margin: 40px 0 10px;
+}
+
+h4 {
+  margin: 0;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+}
+
+.inc-exp.container{
+  background-color: #f5f5fa;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.inc-exp.container > div {
+  flex: 1;
+  text-align: center;
+}
+
+
+.inc-exp.container > div:first-of-type {
+  border-right: 1px solid #dedede;
+}
+
+.money {
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin: 5px 0;
+}
+
+.money.plus {
+  color: var(--income);
+}
+
+.money.minus {
+  color: var(--expense);
+}
+
+label {
+  display: inline-block;
+  margin: 10px 0;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 40px; 
+}
+
+.list li {
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  color: #14211f;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.list li.plus {
+  border-right: 7px solid var(--income);
+}
+
+.list li.minus {
+  border-right: 7px solid var(--expense);
+}
+
+.delete-btn {
+
+  background-color: #FF2400;
+  border: 0;
+  color: white;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 2px 5px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  cursor: pointer;
+  /* Like a tag next to the transaction */
+  transform: translate(-110%, -50%);
+  opacity: 0;
+  /* Add a fade-in transition */
+  transition: opacity 0.3s ease;
+}
+
+.list li:hover .delete-btn {
+  opacity: 1;
+}
+
+.delete-btn:focus {
+  outline: 0;
+}
+
+input[type='text'], input[type='number']{
+  border: 1px solid #d8d8d8;
+  border-radius: 2px;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+}
+
+
+.btn {
+  background-color: #6CB4EE;
+  border-radius: 70px;
+  color: white;
+  cursor: pointer;
+  display: block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+
+  margin: 10px 0 30px;
+  width: 100%;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+
+
+.logoutbtn {
+  background-color: #FF2400;
+  border-radius: 70px;
+  color: white;
+  cursor: pointer;
+  display: block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+
+  margin: 10px 0 30px;
+  width: 7%;
+}
+
+.logoutbtn:hover {
+  transform: scale(1.1);
+}
+
+.logoutbtn:focus {
+  outline: 0;
+}
+
+
+
+
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+
+
+
+
+.art.container{
+  background-color: #f5f5fa;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.art.container > div {
+  flex: 1;
+  text-align: center;
+}
+
+
+.art.container > div:first-of-type {
+  border-right: 1px solid #dedede;
+}
+
+.message {
+
+  color: #FF2400;
+  font-size: large;
+  border: #717171;
+
+}
